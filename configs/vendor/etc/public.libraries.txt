@@ -1,0 +1,2 @@
+libai_client.so
+libteec.so
