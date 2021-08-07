@@ -61,6 +61,17 @@ ALL_DEFAULT_INSTALLED_MODULES += \
 	$(VULKAN_SYMLINK) \
 	$(VULKAN64_SYMLINK)
 
+# Gatekeeper Symlinks
+GATEKEEPER_SYMLINKS := $(TARGET_OUT_VENDOR)
+$(GATEKEEPER_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
+	@echo "Creating gatekeeper symlinks: $@"
+	@mkdir -p $@/lib/hw
+	@mkdir -p $@/lib64/hw
+	@ln -sf libSoftGatekeeper.so $@/lib/hw/gatekeeper.hi6250.so
+	@ln -sf libSoftGatekeeper.so $@/lib64/hw/gatekeeper.hi6250.so
+
+ALL_DEFAULT_INSTALLED_MODULES += $(GATEKEEPER_SYMLINKS)
+
 include $(call all-makefiles-under,$(LOCAL_PATH))
 
 endif
