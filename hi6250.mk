@@ -80,4 +80,12 @@ PRODUCT_PACKAGES += \
     vendor.huawei.hardware.wifi@1.1-service.rc \
     ueventd.rc \
 
+# Recovery
+AB_OTA_UPDATER := false
+
+PRODUCT_PACKAGES += \
+    fstab.hi6250 \
+    init.recovery.hi6250.rc \
+    resize2fs_static
+
 $(call inherit-product, vendor/huawei/hi6250-common/hi6250-common-vendor.mk)
