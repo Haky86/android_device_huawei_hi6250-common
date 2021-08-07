@@ -7,6 +7,8 @@
 COMMON_PATH := device/huawei/hi6250-common
 
 # 64 Bit
+TARGET_SUPPORTS_32_BIT_APPS := true
+TARGET_SUPPORTS_64_BIT_APPS := true
 TARGET_USES_64_BIT_BINDER := true
 
 # Architecture
@@ -65,5 +67,9 @@ BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_VENDORIMAGE_PARTITION_SIZE := 822083584
 
 TARGET_COPY_OUT_VENDOR := vendor
+
+# Platform
+HISI_TARGET_PRODUCT := hi6250
+TARGET_USES_HISI_DTIMAGE := false
 
 include vendor/huawei/hi6250-common/BoardConfigVendor.mk
