@@ -39,4 +39,16 @@ BOARD_CHARGER_ENABLE_SUSPEND := true
 ENABLE_CPUSETS := true
 ENABLE_SCHEDBOOST := true
 
+# Kernel
+BOARD_KERNEL_BASE := 0x00400000
+BOARD_KERNEL_CMDLINE := loglevel=4 initcall_debug=n page_tracker=on unmovable_isolate1=2:192M,3:224M,4:256M printktimer=0xfff0a000,0x534,0x538 androidboot.selinux=permissive
+BOARD_KERNEL_IMAGE_NAME := Image.gz
+BOARD_KERNEL_PAGESIZE := 2048
+BOARD_KERNEL_TAGS_OFFSET := 0x07A00000
+BOARD_RAMDISK_OFFSET := 0x10000000
+BOARD_MKBOOTIMG_ARGS := --ramdisk_offset $(BOARD_RAMDISK_OFFSET) --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
+TARGET_KERNEL_ARCH := arm64
+TARGET_KERNEL_SOURCE := kernel/huawei/hi6250
+TARGET_KERNEL_CONFIG := merge_hi6250_defconfig
+
 include vendor/huawei/hi6250-common/BoardConfigVendor.mk
