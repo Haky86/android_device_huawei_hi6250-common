@@ -41,6 +41,10 @@ BOARD_CHARGER_ENABLE_SUSPEND := true
 ENABLE_CPUSETS := true
 ENABLE_SCHEDBOOST := true
 
+# HIDL
+DEVICE_MANIFEST_FILE := $(COMMON_PATH)/manifest.xml
+DEVICE_MATRIX_FILE := $(COMMON_PATH)/compatibility_matrix.xml
+
 # Kernel
 BOARD_CUSTOM_BOOTIMG := true
 BOARD_CUSTOM_BOOTIMG_MK := $(COMMON_PATH)/kernel/mkbootimg.mk
