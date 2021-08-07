@@ -91,5 +91,6 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)/releasetools
 
 # Treble
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
+PRODUCT_FULL_TREBLE_OVERRIDE := true
 
 include vendor/huawei/hi6250-common/BoardConfigVendor.mk
