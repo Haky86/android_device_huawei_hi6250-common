@@ -74,4 +74,7 @@ TARGET_COPY_OUT_VENDOR := vendor
 HISI_TARGET_PRODUCT := hi6250
 TARGET_USES_HISI_DTIMAGE := false
 
+# Releasetools
+TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)/releasetools
+
 include vendor/huawei/hi6250-common/BoardConfigVendor.mk
