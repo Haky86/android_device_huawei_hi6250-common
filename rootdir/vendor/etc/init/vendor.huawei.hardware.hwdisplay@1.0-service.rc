@@ -1,0 +1,4 @@
+service display-hal-1-0 /vendor/bin/hw/vendor.huawei.hardware.hwdisplay@1.0-service
+    class hal
+    user system
+    group system log media_rw graphics

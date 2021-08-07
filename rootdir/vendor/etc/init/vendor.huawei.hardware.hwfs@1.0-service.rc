@@ -1,0 +1,4 @@
+service hwfs-hal-1-0 /vendor/bin/hw/vendor.huawei.hardware.hwfs@1.0-service
+    class hal
+    user root
+    group root

@@ -1,0 +1,4 @@
+service nfc_hal_ext_service /vendor/bin/hw/vendor.huawei.hardware.nfc@1.0-service
+    class hal
+    user nfc
+    group nfc system

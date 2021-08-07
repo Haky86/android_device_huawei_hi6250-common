@@ -1,0 +1,9 @@
+service dms-hal-1-0 /vendor/bin/hw/vendor.huawei.hardware.dolby.dms@1.0-service
+    interface vendor.huawei.hardware.dolby.dms@1.0::IDms default
+    class hal
+    disabled
+    user media
+    group audio media
+
+on property:ro.odm.config.dolby_dap=true
+    mkdir data/vendor/media 0770 media media
