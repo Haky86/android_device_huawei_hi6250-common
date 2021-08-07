@@ -9,6 +9,11 @@ COMMON_PATH := device/huawei/hi6250-common
 # Data
 PRODUCT_PACKAGES += \
     blkcg_init.sh
+    
+# HIDL
+PRODUCT_PACKAGES += \
+    android.hidl.base@1.0 \
+    android.hidl.manager@1.0
 
 # Ramdisk's Charger
 PRODUCT_PACKAGES += \
