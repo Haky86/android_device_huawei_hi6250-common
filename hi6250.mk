@@ -6,6 +6,11 @@
 
 COMMON_PATH := device/huawei/hi6250-common
 
+# Atrace
+PRODUCT_PACKAGES += \
+    android.hardware.atrace@1.0 \
+    android.hardware.atrace@1.0-service
+
 # Data
 PRODUCT_PACKAGES += \
     blkcg_init.sh
