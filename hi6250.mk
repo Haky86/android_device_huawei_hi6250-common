@@ -11,6 +11,33 @@ PRODUCT_PACKAGES += \
     android.hardware.atrace@1.0 \
     android.hardware.atrace@1.0-service
 
+# Audio
+PRODUCT_PACKAGES += \
+    android.hardware.audio@2.0-impl \
+    android.hardware.audio@5.0-impl \
+    android.hardware.audio@2.0-service \
+    android.hardware.audio.effect@2.0-impl \
+    android.hardware.audio.effect@5.0-impl \
+    audio.a2dp.default \
+    audio.primary.default \
+    audio.r_submix.default \
+    audio.usb.default \
+    cplay \
+    libaudioroute \
+    libaudioutils \
+    libtinyalsa \
+    libtinycompress \
+    tinycap \
+    tinymix \
+    tinypcminfo \
+    tinyplay \
+    libxml2
+
+PRODUCT_COPY_FILES := \
+    frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml \
+    frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_telephony.xml \
+    frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video.xml \
+
 # Data
 PRODUCT_PACKAGES += \
     blkcg_init.sh
