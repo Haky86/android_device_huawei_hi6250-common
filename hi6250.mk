@@ -58,6 +58,11 @@ PRODUCT_PACKAGES += \
     android.hardware.cas@1.0 \
     android.hardware.cas@1.1-service
 
+# Configstore
+PRODUCT_PACKAGES += \
+    android.hardware.configstore@1.1-impl \
+    android.hardware.configstore@1.1-service
+
 # Data
 PRODUCT_PACKAGES += \
     blkcg_init.sh
