@@ -66,6 +66,18 @@ PRODUCT_PACKAGES += \
 # Data
 PRODUCT_PACKAGES += \
     blkcg_init.sh
+
+# DRM
+PRODUCT_PACKAGES += \
+    android.hardware.drm@1.0-impl \
+    android.hardware.drm@1.0-service \
+    android.hardware.drm@1.1-service.clearkey \
+    android.hardware.drm@1.1-service.widevine
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    drm.service.enabled=true \
+    ro.huawei.cust.drm.fl_only=false \
+    ro.huawei.cust.oma_drm=true \
     
 # HIDL
 PRODUCT_PACKAGES += \
