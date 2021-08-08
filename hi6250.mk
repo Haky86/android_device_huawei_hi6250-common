@@ -78,6 +78,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
     drm.service.enabled=true \
     ro.huawei.cust.drm.fl_only=false \
     ro.huawei.cust.oma_drm=true \
+
+# Graphics
+PRODUCT_PACKAGES += \
+    android.hardware.graphics.allocator@2.0-impl \
+    android.hardware.graphics.allocator@2.0-service \
+    android.hardware.graphics.composer@2.2-impl \
+    android.hardware.graphics.composer@2.2-service \
+    android.hardware.graphics.mapper@2.0-impl \
     
 # HIDL
 PRODUCT_PACKAGES += \
