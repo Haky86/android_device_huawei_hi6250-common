@@ -53,6 +53,11 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4 \
     android.hardware.camera.provider@2.5 \
 
+# Cas
+PRODUCT_PACKAGES += \
+    android.hardware.cas@1.0 \
+    android.hardware.cas@1.1-service
+
 # Data
 PRODUCT_PACKAGES += \
     blkcg_init.sh
